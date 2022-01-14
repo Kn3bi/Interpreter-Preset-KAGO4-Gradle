@@ -37,12 +37,12 @@ public class ProgramController {
     public void startProgram() {
         // Anlegen eines zusätzlichen Fensters
         inputForm = new InputForm(this);
+        extraWindow = new JFrame();
+        extraWindow.setSize(500,600);
         extraWindow.setLocation(50,50);
-        extraWindow.setSize(400,400);
         extraWindow.setTitle("Eingabefenster");
         extraWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         extraWindow.setContentPane(inputForm.getContentPanel());
-        extraWindow.pack();
         extraWindow.setVisible(true);
     }
 

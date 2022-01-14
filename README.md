@@ -7,8 +7,12 @@ damit das Projekt korrekt eingerichtet wird.
 Im Anschluss sollte alles funktionieren.
 
 ###Falls nicht:
-File > Settings > Gradle suchen. Dann dort als SDK eine JDK mit Version zwischen 11 und 16 wählen und ggf. downloaden. 
-Der Eintrag "use-Gradle-from" kann auf "wrapper-task in Gradle.build-script" umgestellt werden.
+* File > Settings > Gradle suchen. Dann dort als SDK eine JDK mit Version zwischen 11 und 16 wählen und ggf. downloaden. 
+* Der Eintrag "use-Gradle-from" kann auf "wrapper-task in Gradle.build-script" umgestellt werden. Ggf. muss dies nach einem Build nochmal umgestellt werden.
+* **Falls der GUI-Designer von IntelliJ verwendet werden soll**, 
+  * muss zudem bei "Build and run using" und "Run tests using" jeweils IntelliJ ausgewählt werden. 
+  * Außerdem muss unter Settings bei "GUI Designer" zum Punkt "Generate GUI into" die Angabe "Java Source Code" ausgewählt werden. (Quelle: https://boehrsi.de/posts/2020-05-30_intellij-idea-gui-builder-gradle-how-to/)
+  * Die relevante Datei ist im "libs"-Ordner: forms_rt.jar aus dem JetBrains/IntelliJ IDEA.../lib - Verzeichnis. Muss manuell aktualisiert werden, falls gewünscht.
 Nun sollte alles Nötige heruntergeladen werden. Eventuell danach noch Build.
 
 ##Kurzanleitung: wo ist was?
